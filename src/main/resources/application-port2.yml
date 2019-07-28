@@ -1,0 +1,23 @@
+server:
+  port: 8001
+
+# 单节点注册中心
+#eureka:
+#  client:
+#    fetch-registry: false
+#    register-with-eureka: false
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8000/eureka/,http://localhost:8002/eureka/
+  instance:
+    hostname: registry
+    prefer-ip-address: true
+
+
+
+
+
+

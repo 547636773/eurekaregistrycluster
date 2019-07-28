@@ -1,0 +1,10 @@
+spring:
+  config:
+    name: registry_cluster
+  profiles:
+    active: port1
+eureka:
+  server:
+    wait-time-in-ms-when-sync-empty: 0
+  instance:
+    appname: registry
